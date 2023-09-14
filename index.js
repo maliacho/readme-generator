@@ -30,7 +30,7 @@ const questions = [
         name : 'creditsInput',
     },
     {
-        type : 'list',
+        type : 'checkbox',
         message : 'Please select a license:',
         name : 'licenseInput',
         choices: [
@@ -44,11 +44,14 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
+    const userInput = JSON.stringify(data)
+    fs.writeFile('README.md', userInput, )
 
 // TODO: Create a function to initialize app
 function init() {
-
-}
+    inquirer.prompt(questions)
+    .then(writeToFile)
+};
 
 // Function call to initialize app
 init();
