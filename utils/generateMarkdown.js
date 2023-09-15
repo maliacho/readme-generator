@@ -68,7 +68,50 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) { 
+  if (license === licenses[0]) {
+    return `[${licenses[0]}] `
+  } else if (license === licenses[1]) {
+    return `[${licenses[1]}] `
+  } else if (license === licenses[2]) {
+    return `[${licenses[2]}] `
+  } else if (license === licenses[3]) {
+    return `[${licenses[3]}] `
+  } else if (license === licenses[4]) {
+    return `[${licenses[4]}] `
+  } else if (license === licenses[5]) {
+    return `[${licenses[5]}] `
+  } else if (license === licenses[6]) {
+    return `[${licenses[6]}] `
+  } else if (license === licenses[7]) {
+    return `[${licenses[6]}] `
+  } else if (license === licenses[8]) {
+    return `[${licenses[7]}] `
+  } else if (license === licenses[9]) {
+    return `[${licenses[8]}] `
+  } else if (license === licenses[10]) {
+    return `[${licenses[10]}] `
+  } else if (license === licenses[11]) {
+    return `[${licenses[11]}] `
+  } else if (license === licenses[12]) {
+    return `[${licenses[12]}] `
+  } else if (license === licenses[13]) {
+    return `[${licenses[13]}] `
+  } else if (license === licenses[14]) {
+    return `[${licenses[14]}] `
+  } else if (license === licenses[15]) {
+    return `[${licenses[15]}] `
+  } else if (license === licenses[16]) {
+    return `[${licenses[16]}] `
+  } else if (license === licenses[17]) {
+    return `[${licenses[17]}] `
+  } else if (license === licenses[18]) {
+    return `[${licenses[18]}] `
+  } else {
+    return ''
+  }
+};
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
