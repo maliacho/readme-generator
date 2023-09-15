@@ -62,7 +62,7 @@ function renderLicenseBadge(license) {
   } else if (license === licenses[18]) {
     return '[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)'
   } else {
-    return ''
+    return '';
   }
 };
 
@@ -108,7 +108,7 @@ function renderLicenseLink(license) {
   } else if (license === licenses[18]) {
     return `[${licenses[18]}] https://www.zlib.net/zlib_license.html`
   } else {
-    return ''
+    return '';
   }
 };
 
@@ -155,13 +155,14 @@ function renderLicenseSection(license) {
   } else if (license === licenses[18]) {
     return `More information about ${licenses[18]}:`
   } else {
-    return ''
+    return '';
   }
 };
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.nameInput}
+  
   ## Table of Contents
     * Description
     * Technologies Used
@@ -182,11 +183,12 @@ function generateMarkdown(data) {
   ${data.creditsInput}
 
   ## License 
-  ${renderLicenseSection(data.licenseInput)}
-  ${renderLicenseLink(data.licenseInput)}
+  ${data.licenseInput}
+  ${renderLicenseSection(data.licenses)}
+  ${renderLicenseLink(data.licenses)}
 
   ## Bagdes
-  ${renderLicenseBadge(data.licenseInput)}
+  ${renderLicenseBadge(data.licenses)}
   
 `;
 }
