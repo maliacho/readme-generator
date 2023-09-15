@@ -26,4 +26,5 @@
 
   ## Bagdes
   
-  
+  ![Untitled_ Sep 15, 2023 3_23 PM](https://github.com/maliacho/readme-generator/assets/141271179/5253cbd4-e3d6-424b-b7a1-3c807db30e4c)
+
