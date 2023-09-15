@@ -74,43 +74,43 @@ function renderLicenseLink(license) { }
 // If there is no license, return an empty string
 function renderLicenseSection(license) { 
   if (license === licenses[0]) {
-    return ``
+    return `More information about ${licenses[0]}:`
   } else if (license === licenses[1]) {
-    return ``
+    return `More information about ${licenses[1]}:`
   } else if (license === licenses[2]) {
-    return ``
+    return `More information about ${licenses[2]}:`
   } else if (license === licenses[3]) {
-    return ``
+    return `More information about ${licenses[3]}:`
   } else if (license === licenses[4]) {
-    return ``
+    return `More information about ${licenses[4]}:`
   } else if (license === licenses[5]) {
-    return ``
+    return `More information about ${licenses[5]}:`
   } else if (license === licenses[6]) {
-    return ``
+    return `More information about ${licenses[6]}:`
   } else if (license === licenses[7]) {
-    return ``
+    return `More information about ${licenses[6]}:`
   } else if (license === licenses[8]) {
-    return ``
+    return `More information about ${licenses[7]}:`
   } else if (license === licenses[9]) {
-    return ``
+    return `More information about ${licenses[8]}:`
   } else if (license === licenses[10]) {
-    return ``
+    return `More information about ${licenses[10]}:`
   } else if (license === licenses[11]) {
-    return ``
+    return `More information about ${licenses[11]}:`
   } else if (license === licenses[12]) {
-    return ``
+    return `More information about ${licenses[12]}:`
   } else if (license === licenses[13]) {
-    return ``
+    return `More information about ${licenses[13]}:`
   } else if (license === licenses[14]) {
-    return ``
+    return `More information about ${licenses[14]}:`
   } else if (license === licenses[15]) {
-    return ``
+    return `More information about ${licenses[15]}:`
   } else if (license === licenses[16]) {
-    return ``
+    return `More information about ${licenses[16]}:`
   } else if (license === licenses[17]) {
-    return ``
+    return `More information about ${licenses[17]}:`
   } else if (license === licenses[18]) {
-    return ``
+    return `More information about ${licenses[18]}:`
   } else {
     return ''
   }
@@ -139,7 +139,11 @@ function generateMarkdown(data) {
   ${data.creditsInput}
 
   ## License 
-  ${data.licenseInput}
+  ${renderLicenseSection(data.licenseInput)}
+  ${renderLicenseLink(data.licenseInput)}
+
+  ## Bagdes
+  ${renderLicenseBadge(data.licenseInput)}
   
 `;
 }
