@@ -7,6 +7,7 @@ const { error } = require('console');
 
 // TODO: Create an array of questions for user input
 const questions = [
+
     {
         type: 'input',
         message: 'Please enter the name of your project:',
@@ -18,9 +19,9 @@ const questions = [
         name: 'descriptionInput',
     },
     {
-        type : 'input',
-        message : 'Please enter the technologies used:',
-        name : 'technologiesInput',
+        type: 'input',
+        message: 'Please enter the technologies used:',
+        name: 'technologiesInput',
     },
     {
         type: 'input',
@@ -36,9 +37,9 @@ const questions = [
         type: 'checkbox',
         message: 'Please select a license:',
         name: 'licenseInput',
-        choices: [	
-            'Apache license 2.0',	
-            'Boost Software License 1.0',	
+        choices: [
+            'Apache license 2.0',
+            'Boost Software License 1.0',
             'BSD 2 - clause "Simplified" license',
             'BSD 3 - clause "New" or "Revised" license',
             'BSD 3 - clause Clear license',
@@ -61,16 +62,14 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-    fs.appendFile(`README.md`, markdown(data) , (err) => {
+function writeToFile(fileName, data) { }
+    fs.appendFile(`README.md`, markdown(data), (err) => {
         err ? console.error(err) : console.log(`README.md has been created.`)
-    } )
+})
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-        // let fileName = ;
-        // let data = ;
         .then(writeToFile)
 };
 
