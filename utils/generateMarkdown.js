@@ -70,43 +70,43 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) { 
   if (license === licenses[0]) {
-    return `[${licenses[0]}] `
+    return `[${licenses[0]}] https://opensource.org/licenses/Apache-2.0`
   } else if (license === licenses[1]) {
-    return `[${licenses[1]}] `
+    return `[${licenses[1]}] https://www.boost.org/LICENSE_1_0.txt`
   } else if (license === licenses[2]) {
-    return `[${licenses[2]}] `
+    return `[${licenses[2]}] https://opensource.org/license/bsd-2-clause/`
   } else if (license === licenses[3]) {
-    return `[${licenses[3]}] `
+    return `[${licenses[3]}] https://choosealicense.com/licenses/bsd-3-clause/`
   } else if (license === licenses[4]) {
-    return `[${licenses[4]}] `
+    return `[${licenses[4]}] https://spdx.org/licenses/BSD-3-Clause-Clear.html`
   } else if (license === licenses[5]) {
-    return `[${licenses[5]}] `
+    return `[${licenses[5]}] https://creativecommons.org/publicdomain/zero/1.0/`
   } else if (license === licenses[6]) {
-    return `[${licenses[6]}] `
+    return `[${licenses[6]}] https://creativecommons.org/licenses/by/4.0/`
   } else if (license === licenses[7]) {
-    return `[${licenses[6]}] `
+    return `[${licenses[6]}] https://creativecommons.org/licenses/by-sa/4.0/`
   } else if (license === licenses[8]) {
-    return `[${licenses[7]}] `
+    return `[${licenses[7]}] https://www.eclipse.org/legal/epl-v10.html`
   } else if (license === licenses[9]) {
-    return `[${licenses[8]}] `
+    return `[${licenses[8]}] https://www.gnu.org/licenses/agpl-3.0.en.html`
   } else if (license === licenses[10]) {
-    return `[${licenses[10]}] `
+    return `[${licenses[10]}] https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html`
   } else if (license === licenses[11]) {
-    return `[${licenses[11]}] `
+    return `[${licenses[11]}] https://www.gnu.org/licenses/gpl-3.0.en.html`
   } else if (license === licenses[12]) {
-    return `[${licenses[12]}] `
+    return `[${licenses[12]}] https://www.gnu.org/licenses/lgpl-3.0.en.html`
   } else if (license === licenses[13]) {
-    return `[${licenses[13]}] `
+    return `[${licenses[13]}] https://opensource.org/license/isc-license-txt/`
   } else if (license === licenses[14]) {
-    return `[${licenses[14]}] `
+    return `[${licenses[14]}] https://opensource.org/license/mit/`
   } else if (license === licenses[15]) {
-    return `[${licenses[15]}] `
+    return `[${licenses[15]}] https://www.mozilla.org/en-US/MPL/`
   } else if (license === licenses[16]) {
-    return `[${licenses[16]}] `
+    return `[${licenses[16]}] https://opensource.org/license/ofl-1-1/`
   } else if (license === licenses[17]) {
-    return `[${licenses[17]}] `
+    return `[${licenses[17]}] https://choosealicense.com/licenses/unlicense/`
   } else if (license === licenses[18]) {
-    return `[${licenses[18]}] `
+    return `[${licenses[18]}] https://www.zlib.net/zlib_license.html`
   } else {
     return ''
   }
